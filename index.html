@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>School of Arts Survey </title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+
+        <h1 id="title">School of Arts Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve our institution</p>
+
+        <main class="form"> <!--Form Starts-->
+            <form id="survey">
+
+                <div class="field">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name and surname" required>
+                </div>
+                
+                <div class="field">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your Email" required>  <!--Make sure error shows if invalid-->
+                </div>   
+
+                <div class="field">
+                    <label id="number-label" for="number">Age</label>
+                    <input type="number" id="number" placeholder="Enter your age (optional)" min="15" max="100">
+                </div>
+
+                <div class="field">
+                    <label id="role-label" for="drop-down">What is your current role?</label>
+                    <select id="drop-down" name="role">
+                        <option value="a-levels">A-levels Student</option>
+                        <option value="intermediate">Intermediate Cycle Student</option>
+                        <option value="advanced">Advanced Cycle Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="researcher">Researcher</option>
+                    </select>
+                </div>
+
+
+                <div class="field">
+                    <p>Would you recommend our School of Arts to a friend?</p>
+                    <label>
+                        <input name="user-recommend" value="Yes" type="radio" class="input-radio" checked>
+                        Yes
+                    </label>
+                    <label>
+                        <input name="user-recommend" value="Maybe" type="radio" class="input-radio" checked>
+                        Maybe
+                    </label>
+                    <label>
+                        <input name="user-recommend" value="Not sure" type="radio" class="input-radio" checked>
+                        Not sure
+                    </label>
+                </div>
+
+                <div class="field">
+                    <p>What would you like to see improved with priority?</p>
+                    <label><input name="priority" value="ergonomics" type="checkbox" class="checkbox">Ergonomic Furniture and Illumination</label>  <!-- OK  -->
+                    <label><input name="priority" value="online" type="checkbox" class="checkbox">On-line resources</label>
+                    <label><input name="priority" value="cooperation" type="checkbox" class="checkbox">Co-operation with other Art Institutions</label>
+                    <label><input name="priority" value="facilities" type="checkbox" class="checkbox">Facilities: Library, Canteen, Study Room, Workshop</label>
+                    <label><input name="priority" value="staff" type="checkbox" class="checkbox">More teachers per group</label>
+                    <label><input name="priority" value="materials" type="checkbox" class="checkbox">Shared materials</label>
+                    <label><input name="priority" value="internships" type="checkbox" class="checkbox">Internships and Apprenticeships</label>
+                    <label><input name="priority" value="mentorship" type="checkbox" class="checkbox">Career mentoring</label>
+                </div>
+
+                <div class="field">
+                    <p>Drop here any idea or comment that you want to share with us</p>
+                    <textarea id="comments" class="imput-text" name="comment" placeholder="Write your ideas here"></textarea>
+                </div>
+
+                <div class="field">
+                    <p>Thank you for helping us be exceptional!</p>
+                    <button type="submit" id="submit" class="submit">Submit Survey</button>
+                </div>
+
+            </form>
+        </main> <!--Form End-->
+
+
+        <footer>
+            <p>freecodecamp.org</p>
+            <p>Project - <a 
+                id="survey-link" 
+                target="_blank" 
+                href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form">
+                Survey</a></p>
+            <p>by: <a
+                id="replit" 
+                target="_blank" 
+                href="https://repl.it/@vgastonguiu">Victoria Gastón</a></p>
+        </footer>
+
+    </body>
+
+</html>
